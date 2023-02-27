@@ -1,4 +1,21 @@
 #!/usr/bin/python
+
+'''
+users_du: will get how much each user is utilizing in a shared directory
+usage:
+users_du [path1] [path..n]
+
+Examples:
+To get utilization for current path:
+users_du
+
+To get utilization for specific path:
+users_du /path/to/directory
+
+To get utilization for specific paths:
+users_du /full/path1 relative/path2 ../relative/path3
+'''
+
 import sys,os
 isWin = False
 if os.name == 'nt':
